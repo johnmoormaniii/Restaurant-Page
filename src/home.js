@@ -6,7 +6,7 @@ function renderHome(){
 
     content.innerHTML = `
         <div id="content">
-        <div class="text-box">
+        <div class="text-box" id="welcome-text">
             Welcome to the Seaside Chop Shop, delicious fresh-cooked meat cooked right in front you.
         </div>
         <div id="images">
