@@ -1,0 +1,262 @@
+@font-face {
+    font-family: Minecraftory;
+    src: url(./fonts/Minercraftory.ttf);
+}
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --margin-width: 100px;
+    --header-color: rgba(0,0,0,.85);
+    --animal-size: 200px;
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: Minecraftory;
+    color: white;
+}
+
+
+/* -------------------------------------------------------- */
+/* -------------------- GENERAL STYLES -------------------- */
+/* -------------------------------------------------------- */
+
+
+#container{
+    position: relative;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 50px;
+    min-height: 100vh;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    padding: 0;
+}
+
+#background-image{
+    min-height: 100vh;
+    min-width: 100vw;
+    background-image: url(./img/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: .75;
+    position: fixed;
+    z-index: -10;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: var(--header-color);
+    color: white;
+}
+
+#chop-shop{
+    width: 100%;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+
+/* ---------- NAV BAR STYLING ---------- */
+
+
+nav{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    text-decoration: none;
+    list-style-type: none;
+    position: relative;
+    margin: 10px;
+    padding: 0;
+    height: 50px;
+}
+
+.btn-nav{
+    border: 1px solid white;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+footer{
+    background-color: var(--header-color);
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#footer-text{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ---------- HOVER STYLING ---------- */
+
+
+.btn-nav:hover{
+    cursor: pointer;
+    color: var(--header-color);
+    background-color: white;
+}
+
+
+/* --------------------------------------------------- */
+/* -------------------- HOME PAGE -------------------- */
+/* --------------------------------------------------- */
+
+
+
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--header-color);
+    height: 100px;
+    margin: 50px;
+    padding: 25px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+
+#images{
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#animals{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    margin-bottom: 0;
+    gap: 100px;
+}
+
+#gif-furnace{
+    width: 250px;
+    margin-bottom: 50px;
+}
+
+.animal{
+    height: var(--animal-size);
+}
+
+#chef-content{
+    display: flex;
+    flex-direction: column;
+}
+
+#steve{
+    margin: 50px;
+    transform: translate(-40px);
+}
+
+
+/* --------------------------------------------------- */
+/* -------------------- MENU PAGE -------------------- */
+/* --------------------------------------------------- */
+
+
+#menu-text{
+    margin-bottom: 50px;
+    font-size: 1.5rem;
+    margin-top: 0;
+}
+
+#full-menu{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 100px;
+}
+
+.menu-item{
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--header-color);
+    height: 250px;
+    width: 250px;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+
+.item-name{
+    font-size: 1.25rem;
+}
+
+#amogus{
+    height: 160px;
+    width: 160px;
+}
+
+.menu-item:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: .05s ease-in-out;
+}
+
+
+/* ------------------------------------------------------ */
+/* -------------------- CONTACT PAGE -------------------- */
+/* ------------------------------------------------------ */
+
+
+#find-us{
+    width: 400px;
+    font-size: 1.5rem;
+}
+
+#map-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#address{
+    margin-bottom: 10px;
+    height: 25px;
+    width: 600px;
+}
